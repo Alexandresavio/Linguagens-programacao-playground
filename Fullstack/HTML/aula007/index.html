@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre formularios HTML</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="/processar-dados" method="post">
+        <fieldset>
+            <legend>
+                <strong>Dados pessoais</strong>
+            </legend>
+
+            <label for="pNome">Nome:</label>
+            <input type="text" name="pNome" id="pNome" required>
+            <br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+            <br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+            <br>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option selected disabled value="">Selecione seu estado</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <strong>Dados profissionais</strong>
+            </legend>
+            <p>Natureza do cargo:</p>
+            <label><input type="radio" name="cargo" value="gerencia">Gerência</label>
+            <label><input type="radio" name="cargo" value="financeiro">Financeiro</label>
+            <label><input type="radio" name="cargo" value="recepcao">Recepção</label>
+            <label><input type="radio" name="cargo" value="adm">Administrativo</label>
+            <label><input type="radio" name="cargo" value="juridico">Juridico</label>
+            
+            <p>Área de interesses:</p>
+            <label><input type="checkbox" name="area" value="computacao">Computação</label>
+            <label><input type="checkbox" name="area" value="bio">Biologia</label>
+            <label><input type="checkbox" name="area" value="ambiente">Meio ambiente</label>
+            <label><input type="checkbox" name="area" value="eng">Engenharia</label>
+            <br><br>
+
+            <p>Mini-curriculo</p>
+            <textarea></textarea>            
+        </fieldset>
+        <br>
+        <input type="submit" name="btn-cadastrar" value="Cadastrar">
+        <input type="reset" name="btn-limpar" value="Limpar formulário">
+    </form>
+</body>
+
+</html>
